@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | FashionAura</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4E1C6;
+    color: #6D4C41;
+    text-align: center;
+}
+
+.signup-container {
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #E6BE8A;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.signup-container h2 {
+    color: white;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], select {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #F4E1C6;
+    color: #6D4C41;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6D4C41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #D2A679;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Sign Up for FashionAura</h2>
+        <form name="signupForm" onsubmit="validateForm(event)">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="number" name="age" placeholder="Age" required>
+            <select name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+function validateForm(event) {
+    event.preventDefault();
+
+    const name = document.forms["signupForm"]["name"].value.trim();
+    const email = document.forms["signupForm"]["email"].value.trim();
+    const password = document.forms["signupForm"]["password"].value;
+    const age = document.forms["signupForm"]["age"].value;
+    const gender = document.forms["signupForm"]["gender"].value;
+
+    if (name.length < 3) {
+        alert("Name must be at least 3 characters long.");
+        return false;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+    }
+
+    if (age < 18 || age > 100) {
+        alert("Age must be between 18 and 100.");
+        return false;
+    }
+
+    if (gender === "") {
+        alert("Please select your gender.");
+        return false;
+    }
+
+    alert("Signup successful!");
+    document.forms["signupForm"].submit();
+}
+    </script>
+
+</body>
+</html>

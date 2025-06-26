@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionAura Blog</title>
+    <style>
+      /* General Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4e1c6; /* Sandal tone */
+        color: #6d4c41;
+        text-align: center;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(to right, #e6be8a, #d2a679);
+        color: white;
+        padding: 20px;
+      }
+
+      /* Navigation */
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        background-color: #f4e1c6;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #6d4c41;
+        font-weight: bold;
+        padding: 8px 15px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #d2a679;
+        color: white;
+      }
+
+      /* Blog Section */
+      .blog-intro {
+        padding: 30px;
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      /* Blog Posts */
+      .blog-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px;
+      }
+
+      .blog-post {
+        width: 300px;
+        background-color: #e6be8a;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: left;
+        transition: 0.3s;
+      }
+
+      .blog-post img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .blog-post h3 {
+        color: #6d4c41;
+      }
+
+      .blog-post p {
+        font-size: 16px;
+        color: #6d4c41;
+      }
+
+      .blog-post:hover {
+        transform: scale(1.05);
+      }
+
+      /* Read More Button */
+      .read-more {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        background-color: #6d4c41;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+
+      .read-more:hover {
+        background-color: #d2a679;
+      }
+
+      /* Fade-in Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Footer */
+      footer {
+        background-color: #6d4c41;
+        color: white;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>FashionAura Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Store</a></li>
+          <li><a href="blog.html">Fashion Blog</a></li>
+          <li><a href="why.html">Why This Store?</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+
+    <section class="blog-intro">
+      <h2>Stay Updated with the Latest Fashion Trends</h2>
+      <p>Explore styling tips, seasonal collections, and designer insights.</p>
+    </section>
+
+    <section class="blog-container">
+      <div class="blog-post">
+        <img
+          src="https://i.pinimg.com/736x/61/38/6e/61386e30bda94d3dd545d3c6e3e5b9ba.jpg"
+          alt="Latest Fashion Trends"
+        />
+        <h3>🔹 Top Trends for 2025</h3>
+        <p>
+          Discover this season’s hottest colors, fabrics, and statement pieces.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <img
+          src="https://i.pinimg.com/736x/8b/a0/07/8ba0078ee6b2628a2d5869e642990ff8.jpg"
+          alt="Style Guide"
+        />
+        <h3>🌟 How to Style Elegantly</h3>
+        <p>
+          Tips for mixing and matching outfits that complement your personality.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <video
+          src="video1.mp4"
+          width="300"
+          height="500"
+          autoplay
+          muted loop
+        ></video>
+        <h3>🎨 Designer’s Perspective</h3>
+        <p>
+          Exclusive insights from industry experts on upcoming fashion
+          innovations.
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 FashionAura | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

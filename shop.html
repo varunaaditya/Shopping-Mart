@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionAura - Store</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4E1C6; 
+    color: #6D4C41; 
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to right, #E6BE8A, #D2A679); 
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #F4E1C6;
+}
+nav a {
+    text-decoration: none;
+    color: #6D4C41;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #D2A679;
+    color: white;
+}
+
+.collections {
+    padding: 40px;
+}
+
+.collection-item {
+    display: inline-block;
+    width: 250px;
+    background-color: #E6BE8A; 
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.collection-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.collection-item p {
+    font-size: 18px;
+    color: #6D4C41;
+    font-weight: bold;
+}
+
+.collection-item:hover {
+    transform: scale(1.05);
+    background-color: #D2A679; 
+}
+
+footer {
+    background-color: #6D4C41;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FashionAura</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Store</a></li>
+                <li><a href="blog.html">Fashion Blog</a></li>
+                <li><a href="why.html">Why This Store?</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="collections">
+        <h2>Our Exclusive Dress Collections</h2>
+        <div class="collection-item">
+           <a href="https://amzn.in/d/bkP2ijl"><img src="https://i.pinimg.com/474x/a3/4d/66/a34d66223f50cbc7916f1dc85e07c89b.jpg" alt="Casual Chic"></a>
+            <p>Casual Chic</p>
+        </div>
+        <div class="collection-item">
+            <a href="https://amzn.in/d/jl2tGG8"><img src="https://i.pinimg.com/474x/04/55/ae/0455aea7813c05ed105fab1eaf36f8ad.jpg" alt="Evening Glam"></a>
+            <p>Evening Glam</p>
+        </div>
+        <div class="collection-item">
+            <a href="https://amzn.in/d/89ANkwj"><img src="https://i.pinimg.com/474x/b2/c2/04/b2c204a7eb3c8c61e29a190f7659f9b7.jpg" alt="Vintage Elegance"></a>
+            <p>Vintage Elegance</p>
+        </div>
+        <div class="collection-item">
+            <a href="https://amzn.in/d/8jEFPfB"><img src="https://i.pinimg.com/474x/1e/50/49/1e5049f59a69334642ab593c5974f451.jpg" alt="Runway Ready"></a>
+            <p>Runway Ready</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FashionAura | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

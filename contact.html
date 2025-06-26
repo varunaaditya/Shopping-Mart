@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+      
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4E1C6;
+    color: #6D4C41;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to right, #E6BE8A, #D2A679);
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #F4E1C6;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6D4C41;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #D2A679;
+    color: white;
+}
+
+.contact-container {
+    width: 50%;
+    margin: 40px auto;
+    background-color: #E6BE8A;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 2px solid #6D4C41;
+}
+
+button {
+    background-color: #6D4C41;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #D2A679;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    background-color: #6D4C41;
+    color: white;
+    padding: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FashionAura</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Store</a></li>
+                <li><a href="blog.html">Fashion Blog</a></li>
+                <li><a href="why.html">Why This Store?</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <h2>Get In Touch</h2>
+        <p>Have a question or need assistance? Fill out the form below.</p>
+        <form onsubmit="return validateForm()">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <div id="nameError" class="error-message"></div>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <div id="emailError" class="error-message"></div>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message"></textarea>
+            <div id="messageError" class="error-message"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FashionAura | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            document.getElementById('nameError').textContent = name ? '' : 'Name is required.';
+            document.getElementById('emailError').textContent = email ? '' : 'Email is required.';
+            document.getElementById('messageError').textContent = message ? '' : 'Message is required.';
+
+            return name && email && message;
+        }
+    </script> 
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionAura - Home & Trends</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4E1C6;
+    color: #6D4C41;
+    text-align: center;
+}
+
+
+header {
+    background: linear-gradient(#E6BE8A, #D2A679);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #F4E1C6;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6D4C41;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #D2A679;
+    color: white;
+}
+
+.hero {
+    padding: 60px;
+    background: url('fashion-banner.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 28px;
+}
+
+.model-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.model-gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.model-gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #6D4C41;
+    color: white;
+    padding: 15px;
+}
+.login-button {
+    background-color: #6D4C41;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 110px;
+}
+.sign-button {
+    background-color: #6D4C41;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    margin-left: 640px;
+}
+
+.login-button:hover {
+    background-color: #D2A679;
+}
+.sign-button:hover {
+    background-color: #D2A679;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FashionAura</h1>
+        <p>Where Style Speaks</p>
+        <a href="login.html" class="login-button">Login</a>
+        <a href="sign in.html" class="sign-button">Sign up</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Store</a></li>
+                <li><a href="blog.html">Fashion Blog</a></li>
+                <li><a href="why.html">Why This Store?</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Discover Exclusive Fashion</h2>
+        <p>Elevate Your Style with Our Premium Collections</p>
+        <div class="model-gallery">
+          <img src="https://i.pinimg.com/474x/23/e5/04/23e504c0340715dedd9ee503a55246f7.jpg" alt="Elegant Model">
+          <img src="https://i.pinimg.com/474x/b7/69/75/b76975febc62fc07e652937db9916425.jpg" alt="Fashion Glam">
+          <img src="https://i.pinimg.com/474x/97/9a/39/979a392964714320287bcfe998adafca.jpg" alt="Chic Couture">
+          <img src="https://i.pinimg.com/474x/cf/95/fa/cf95faaa1ac3aed8a6befd57f5a6289b.jpg" alt="Chic Couture">
+          <img src="https://i.pinimg.com/474x/82/07/16/820716f2445287b39c0f172e154e4707.jpg" alt="Chic Couture">
+      </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 FashionAura | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
